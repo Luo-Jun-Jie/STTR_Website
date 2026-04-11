@@ -1,80 +1,65 @@
-# Academic Project Page Template
+# STTR Website
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+Project page for **Compact single-shot ranging and near-far imaging using metasurfaces**.
 
-A clean, responsive template for academic project pages.
+This site is a static academic webpage built from the Academic Project Page template and customized for the paper, figures, citation, and related works.
 
+## What is in this repo
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+- `index.html` contains all page content and metadata.
+- `static/css/` contains the site styles.
+- `static/js/` contains the carousel, dropdown, and utility scripts.
+- `static/images/` contains figures, preview assets, and the favicon.
+- `static/videos/` and `static/pdfs/` contain media and downloadable files used by the page.
 
+## Local editing
 
+Open `index.html` to update the paper title, authors, abstract, figure captions, links, and citation.
 
-## Start using the template
-To start using the template click on `Use this Template`.
+The current page already includes:
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+- Paper metadata for search engines and social previews
+- A short abstract section
+- An image carousel for key figures
+- A related-works dropdown
+- BibTeX citation support
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+## Preview locally
 
-## What's New
+You can preview the site by opening `index.html` directly in a browser, or by serving the folder with any simple static server.
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+For example, in PowerShell:
 
-## Components
+```powershell
+python -m http.server 8000
+```
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
+Then open `http://localhost:8000` in your browser.
 
-## Customization
+## Publishing on GitHub Pages
 
-The HTML file has TODO comments showing what to replace:
+1. Push the repository to GitHub.
+2. In the repository, go to Settings > Pages.
+3. Choose the branch and root folder that contains `index.html`.
+4. Wait for the deployment to complete.
+5. GitHub will show the live URL in the Pages settings page.
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
+The site is typically available at one of these URLs:
 
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
+- `https://<your-username>.github.io/<repo-name>/`
+- `https://<your-username>.github.io/` if the repository name is `<your-username>.github.io`
 
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
+## Customization notes
 
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+- Replace placeholder links in `index.html` with the final DOI, code repository, and author pages.
+- Update `static/images/social_preview.png` with a 1200x630 preview image if you want richer social sharing.
+- Replace the demo PDF, video, and carousel images with your final project assets.
+- Update the related-works dropdown with the final paper titles and venue names.
 
 ## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+This page is based on the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) and the [Nerfies](https://nerfies.github.io/) project page.
+
+## License
+
+This website follows the license used by the original template unless otherwise noted in the repository.
